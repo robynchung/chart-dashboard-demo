@@ -1,6 +1,5 @@
-import React from "react";
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from "recharts";
-
+import React, { PureComponent } from "react";
+import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from "recharts";
 import RoundBox from "../RoundBox";
 
 const data = [
@@ -48,17 +47,17 @@ const data = [
   }
 ];
 
-export default function LineChartContainer({ data }) {
-  const jsfiddleUrl = "https://jsfiddle.net/alidingling/xqjtetw0/";
+export default function LineChartContainer({ data: datadprop }) {
+  console.log(datadprop);
 
   return (
     <RoundBox>
-      <LineChart
+      <BarChart
         width={500}
         height={300}
         data={data}
         margin={{
-          top: 5,
+          top: 20,
           right: 30,
           left: 20,
           bottom: 5
@@ -69,9 +68,9 @@ export default function LineChartContainer({ data }) {
         <YAxis />
         <Tooltip />
         <Legend />
-        <Line type="monotone" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8 }} />
-        <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
-      </LineChart>
+        <Bar dataKey="pv" stackId="a" fill="#8884d8" />
+        <Bar dataKey="uv" stackId="a" fill="#82ca9d" />
+      </BarChart>
     </RoundBox>
   );
 }

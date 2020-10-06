@@ -47,3 +47,10 @@ body,
   padding-top: var(--paddingBetween);
   column-gap: var(--paddingBetween);
 }
+
+.logo {
+  color: #fff;
+  font-weight: 700;
+  padding: 50px;
+  width: 100%;
+}
