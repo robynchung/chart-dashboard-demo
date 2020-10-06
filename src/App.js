@@ -1,14 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import Menu from "./components/Menu/Menu";
 import LineChart from "./components/LineChartSection/LineChartContainer";
 
 function App() {
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+
+    axios
+      .get("https://api.bluecitytechnology.com/s/smp")
+      .then(response => {
+        setData(response);
+        setLoading(false);
+      })
+      .catch(error => alert(error));
+  }, []);
+
   return (
     <div className="container">
       <Menu />
-      <div className="section-container">
-        <LineChart />
-      </div>
+      <div className="section-container">{!loading && data && <LineChart />}</div>
     </div>
   );
 }
