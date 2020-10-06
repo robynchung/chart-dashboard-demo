@@ -6,5 +6,6 @@
   --backgroundGrey: #ecf1f7;
   --white: #fff;
 
-  /* font */
+  /* padding */
+  --paddingBetween: 30px;
 }

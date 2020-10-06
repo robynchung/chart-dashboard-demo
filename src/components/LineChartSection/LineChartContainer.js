@@ -48,7 +48,7 @@ const data = [
   }
 ];
 
-export default function LineChartContainer() {
+export default function LineChartContainer({ data }) {
   const jsfiddleUrl = "https://jsfiddle.net/alidingling/xqjtetw0/";
 
   return (

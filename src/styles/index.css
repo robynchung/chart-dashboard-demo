@@ -38,5 +38,12 @@ body,
 }
 
 .section-container {
-  padding: 30px;
+  padding: var(--paddingBetween);
+}
+
+.section-sub-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: var(--paddingBetween);
+  column-gap: var(--paddingBetween);
 }
