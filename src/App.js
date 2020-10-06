@@ -15,11 +15,13 @@ function App() {
       .get("https://api.bluecitytechnology.com/s/smp/")
       .then(response => {
         console.log(data);
-        setData(response);
+        setData(response.data);
         setLoading(false);
       })
       .catch(error => alert(error));
   }, []);
+
+  console.log(data);
 
   return (
     <div className="container">

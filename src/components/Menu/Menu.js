@@ -30,10 +30,10 @@ export default function Menu() {
 
   return (
     <ul className="component-menu-container">
+      <li>Blue City</li>
+
       {menuOptions.map((menu, key) => {
         const { icon, description } = menu;
-
-        console.log(numMenu);
 
         return <MenuItem key={key} icon={icon} description={description} isActive={numMenu === key} onClick={() => setActiveMenu(key)} />;
       })}
