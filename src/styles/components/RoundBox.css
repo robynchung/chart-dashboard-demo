@@ -1,0 +1,8 @@
+.component-round-box {
+  background-color: var(--white);
+  border-radius: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 3px 3px 10px 0px rgba(168, 192, 219, 0.2);
+  -moz-box-shadow: 3px 3px 10px 0px rgba(168, 192, 219, 0.2);
+  box-shadow: 3px 3px 10px 0px rgba(168, 192, 219, 0.2);
+}

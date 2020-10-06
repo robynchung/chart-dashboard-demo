@@ -1,0 +1,22 @@
+.component-menu-container {
+  background-color: var(--blue);
+  height: 100vh;
+}
+
+.component-menu-child {
+  align-items: center;
+  color: var(--lightBlue);
+  cursor: pointer;
+  display: flex;
+  justify-content: left;
+  padding: 10px 50px;
+}
+
+.component-menu-child .active {
+  color: var(--white);
+}
+
+.component-menu-icon {
+  color: var(--lightBlue2);
+  margin-right: 10px;
+}

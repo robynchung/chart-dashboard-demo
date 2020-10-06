@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+@import "./_variable.css";
+
+/* common component */
+@import "./components/RoundBox.css";
+
+/* section component */
+@import "./components/Menu/Menu.css";
+
+* {
+  box-sizing: border-box;
+  font-family: Avenir;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+html,
+body,
+#root,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  background-color: var(--backgroundGrey);
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+
+.section-container {
+  padding: 30px;
+}
