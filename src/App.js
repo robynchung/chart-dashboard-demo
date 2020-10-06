@@ -1,37 +1,19 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
+
 import Menu from "./components/Menu/Menu";
-import LineChart from "./components/LineChartSection/LineChartContainer";
+import LineChart from "./components/ChartSection/ChartContainer";
 import Websocket from "./components/WebsocketSection/WebsocketContainer";
 import useWebsoocket from "./hooks/useWebsocket";
-import { api } from "./constants";
+import useChartData from "./hooks/useChartData";
 
 function App() {
-  const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(false);
   // const wsMessage = useWebsoocket();
-
-  // console.log(wsMessage);
-
-  useEffect(() => {
-    setLoading(true);
-
-    axios
-      .get(api.chart)
-      .then(response => {
-        setData(response.data);
-        setLoading(false);
-      })
-      .catch(error => alert(error));
-  }, []);
-
-  console.log(loading, data);
 
   return (
     <div className="container">
       <Menu />
       <div className="section-container">
-        {!loading && data && <LineChart data={data} />}
+        <LineChart />
         <div className="section-sub-container ">
           <Websocket />
           <Websocket />

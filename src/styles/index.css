@@ -5,7 +5,8 @@
 @import "./components/RoundBox.css";
 
 /* section component */
-@import "./components/Menu/Menu.css";
+@import "./components/Menu.css";
+@import "./components/Chart.css";
 
 * {
   box-sizing: border-box;
@@ -30,6 +31,7 @@ body,
 #root {
   background-color: var(--backgroundGrey);
   height: 100vh;
+  color: var(--darkBlue);
 }
 
 .container {

@@ -1,0 +1,5 @@
+.component-chart-calendar {
+  display: flex;
+  font-size: 1.5em;
+  justify-content: flex-end;
+}
