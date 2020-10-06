@@ -1,4 +1,4 @@
-import React, { PureComponent } from "react";
+import React from "react";
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from "recharts";
 import RoundBox from "../RoundBox";
 
@@ -48,12 +48,11 @@ const data = [
 ];
 
 export default function LineChartContainer({ data: datadprop }) {
-  console.log(datadprop);
-
   return (
     <RoundBox>
+      ddddsqwe2e
       <BarChart
-        width={500}
+        width={`100%`}
         height={300}
         data={data}
         margin={{
