@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { AiOutlineHome } from "react-icons/ai";
 import MenuItem from "./MenuItem";
+import Tree from "../../../node_modules/react-virtualized-tree/lib/TreeContainer";
+import Renderers from "../../../node_modules/react-virtualized-tree/lib/renderers";
 
 const menuOptions = [
   {

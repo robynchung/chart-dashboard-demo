@@ -20,7 +20,7 @@ export default function ChartContainer() {
   return (
     <RoundBox>
       <div className="component-chart-calendar">
-        <BiCalendar />
+        <span className="component-chart-calendar-date">Current Date: {moment(chartData?.data?.plot?.x[0]).format("YYYY-MM-DD")}</span> <BiCalendar />
       </div>
       {!chartData.loading && chartData.data ? <Chart chartData={chartData} refinedData={refinedData} /> : <div>loading</div>}
     </RoundBox>

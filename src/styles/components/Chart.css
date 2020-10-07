@@ -1,5 +1,11 @@
 .component-chart-calendar {
+  align-items: center;
   display: flex;
   font-size: 1.5em;
   justify-content: flex-end;
+}
+
+.component-chart-calendar-date {
+  font-size: 15px;
+  padding-right: var(--paddingBetweenText);
 }
