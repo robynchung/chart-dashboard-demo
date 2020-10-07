@@ -26,7 +26,11 @@ export default function ChartContainer() {
           <BiCalendar />
         </div>
       </div>
-      {!chartData.loading && chartData.data ? <Chart chartData={chartData} refinedData={refinedData} /> : <div>loading</div>}
+      {!chartData.loading && chartData.data ? (
+        <Chart chartData={chartData} refinedData={refinedData} />
+      ) : (
+        <div className="loading">&#128640; Loading...</div>
+      )}
     </RoundBox>
   );
 }

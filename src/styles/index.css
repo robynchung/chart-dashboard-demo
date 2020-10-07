@@ -34,6 +34,12 @@ body,
   color: var(--darkBlue);
 }
 
+h2 {
+  font-size: 1em;
+  margin-left: 20px;
+  margin-top: 0;
+}
+
 .container {
   display: grid;
   grid-template-columns: 200px 1fr;
@@ -60,8 +66,8 @@ body,
   text-align: center;
 }
 
-h2 {
-  font-size: 1em;
-  margin-left: 20px;
-  margin-top: 0;
+.loading {
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
