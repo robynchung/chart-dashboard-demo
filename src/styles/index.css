@@ -34,8 +34,8 @@ html,
 body,
 #root {
   background-color: var(--backgroundGrey);
-  height: 100vh;
   color: var(--darkBlue);
+  height: 100vh;
 }
 
 h2 {
@@ -59,10 +59,10 @@ h3 {
 }
 
 .section-sub-container {
+  column-gap: var(--paddingBetween);
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-top: var(--paddingBetween);
-  column-gap: var(--paddingBetween);
 }
 
 .section-sub-container .component-round-box {
@@ -73,10 +73,10 @@ h3 {
   background-color: #0b3173;
   color: #fff;
   font-weight: 700;
-  padding: 30px 50px;
-  width: 100%;
   margin-bottom: 30px;
+  padding: 30px 50px;
   text-align: center;
+  width: 100%;
 }
 
 .loading {

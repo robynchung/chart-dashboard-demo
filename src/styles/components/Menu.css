@@ -10,10 +10,22 @@
   display: flex;
   justify-content: left;
   padding: 10px 50px;
+  position: relative;
 }
 
 .component-menu-child .active {
   color: var(--white);
+}
+
+.component-menu-child.hasChildren {
+  display: block;
+}
+
+.component-menu-child ul li {
+  padding: 5px 10px;
+}
+.component-menu-child ul li:first-child {
+  margin-top: 10px;
 }
 
 .component-menu-icon {

@@ -1,10 +1,12 @@
 :root {
   /* colors */
-  --darkBlue: #144277;
+  --backgroundGrey: #ecf1f7;
   --blue: #0961f8;
+  --darkBlue: #144277;
+  --green: #51d88a;
+  --grey: #ccc;
   --lightBlue: #5e99ff;
   --lightBlue2: #bdddee;
-  --backgroundGrey: #ecf1f7;
   --white: #fff;
 
   /* padding */

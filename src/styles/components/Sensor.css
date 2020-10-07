@@ -1,7 +1,7 @@
 .component-sensor-container {
+  column-gap: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 10px;
 }
 
 .component-sensor-num-box {
@@ -16,6 +16,6 @@
 .component-sensor-item-box {
   background-color: #f5f5f5;
   border-radius: 20px;
-  padding: 9px;
   color: #505050;
+  padding: 9px;
 }

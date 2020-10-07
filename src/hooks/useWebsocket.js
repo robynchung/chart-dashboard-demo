@@ -3,7 +3,7 @@ import { api } from "../constants";
 
 export default function useWebsocket() {
   const [ws, setWs] = useState(null);
-  const [isPaused, _] = useState(false);
+  const [isPaused] = useState(false);
   const [wsMessage, setWsMessage] = useState(null);
 
   useEffect(() => {
@@ -28,7 +28,6 @@ export default function useWebsocket() {
       const message = JSON.parse(e.data);
 
       setWsMessage(message);
-      console.log("e", message);
     };
   }, [isPaused, ws]);
 

@@ -6,7 +6,7 @@
 }
 
 .component-chart-calendar-header {
-  margin-left: 10px;
+  margin-left: var(--paddingBetweenText);
 }
 
 .component-chart-calendar-container {

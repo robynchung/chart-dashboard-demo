@@ -30,7 +30,12 @@ export default function ChartContainer() {
         {!chartData.loading && chartData.data ? (
           <Chart chartData={chartData} refinedData={refinedData} />
         ) : (
-          <div className="loading">&#128640; Loading...</div>
+          <div className="loading">
+            <span role="img" aria-label="loading">
+              &#128640;
+            </span>
+            Loading...
+          </div>
         )}
       </RoundBox>
     </>
