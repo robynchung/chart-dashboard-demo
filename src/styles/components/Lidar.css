@@ -1,0 +1,73 @@
+.component-lidar-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+}
+
+.component-lidar-cpu-item-container {
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.component-lidar-cpu-item-container:first-child {
+  margin-bottom: var(--paddingBetweenText);
+}
+
+.component-lidar-cpu-title-icon {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+
+.component-lidar-cpu-title-icon svg {
+  margin-right: 20px;
+}
+
+.component-liar-cpu-item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.component-lidar-ram-container {
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+
+.component-lidar-ram-content {
+  font-size: 12px;
+  width: 100%;
+}
+
+.component-lidar-ram-num {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.component-lidar-ram-num-title {
+  font-weight: 800;
+}
+
+.component-lidar-ram-bar-container {
+  background-color: #ccc;
+  border-radius: 20px;
+  height: 30px;
+  position: relative;
+  width: 100%;
+}
+
+.component-lidar-ram-bar-container::before {
+  background-color: #51d88a;
+  border-radius: 20px;
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 80%;
+}
+
+/* .component-lidar-ram-bar-available {
+} */

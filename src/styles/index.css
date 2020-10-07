@@ -5,8 +5,10 @@
 @import "./components/RoundBox.css";
 
 /* section component */
-@import "./components/Menu.css";
 @import "./components/Chart.css";
+@import "./components/Lidar.css";
+@import "./components/Menu.css";
+@import "./components/Sensor.css";
 
 * {
   box-sizing: border-box;
@@ -22,8 +24,10 @@ body,
 #root,
 ul,
 li {
+  list-style: none;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 html,
@@ -35,9 +39,14 @@ body,
 }
 
 h2 {
-  font-size: 1em;
+  font-size: 30px;
   margin-left: 20px;
   margin-top: 0;
+}
+
+h3 {
+  color: var(--white);
+  margin: 0;
 }
 
 .container {
@@ -54,6 +63,10 @@ h2 {
   grid-template-columns: 1fr 1fr;
   padding-top: var(--paddingBetween);
   column-gap: var(--paddingBetween);
+}
+
+.section-sub-container .component-round-box {
+  height: 190px;
 }
 
 .logo {

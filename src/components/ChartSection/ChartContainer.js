@@ -18,19 +18,21 @@ export default function ChartContainer() {
     });
 
   return (
-    <RoundBox>
-      <div className="component-chart-calendar">
-        <h2>Statistics</h2>
-        <div className="component-chart-calendar-container">
-          <span className="component-chart-calendar-date">Current Date: {moment(chartData?.data?.plot?.x[0]).format("YYYY-MM-DD")}</span>{" "}
-          <BiCalendar />
+    <>
+      <h2>Statistics</h2>
+      <RoundBox>
+        <div className="component-chart-calendar">
+          <div className="component-chart-calendar-container">
+            <span className="component-chart-calendar-date">Current Date: {moment(chartData?.data?.plot?.x[0]).format("YYYY-MM-DD")}</span>{" "}
+            <BiCalendar />
+          </div>
         </div>
-      </div>
-      {!chartData.loading && chartData.data ? (
-        <Chart chartData={chartData} refinedData={refinedData} />
-      ) : (
-        <div className="loading">&#128640; Loading...</div>
-      )}
-    </RoundBox>
+        {!chartData.loading && chartData.data ? (
+          <Chart chartData={chartData} refinedData={refinedData} />
+        ) : (
+          <div className="loading">&#128640; Loading...</div>
+        )}
+      </RoundBox>
+    </>
   );
 }
