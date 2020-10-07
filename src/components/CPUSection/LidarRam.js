@@ -1,7 +1,9 @@
+import { ContactSupportOutlined } from "@material-ui/icons";
 import React from "react";
 import { PieChart } from "react-minimal-pie-chart";
 
 export default function LidarRam({ total, available }) {
+  console.log(total, available);
   return (
     <div className="component-lidar-ram-content">
       <div className="component-lidar-ram-bar-container"></div>
